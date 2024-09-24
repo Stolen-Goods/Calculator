@@ -59,7 +59,11 @@ function multiply(firstNumber, secondNumber) {
 }
 
 function divide(firstNumber, secondNumber) {
-    return Number(firstNumber) / Number(secondNumber);
+    if (secondNumber == 0) {
+        return "You can't do that!"; 
+    } else {
+        return Number(firstNumber) / Number(secondNumber);
+    }
 }
 
 function operate(firstNumber, operator, secondNumber) {
